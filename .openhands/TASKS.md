@@ -1,17 +1,13 @@
 # Task List
 
-1. ✅ Tìm tất cả form có input password trong dự án
+1. ✅ Cấu hình Git với thông tin người dùng và token mới
 
-2. ✅ Thêm biểu tượng con mắt cho form đăng nhập admin
+2. ✅ Thêm remote repository mới
 
-3. ✅ Thêm biểu tượng con mắt cho login modal
+3. 🔄 Tạo branch mới và commit tất cả thay đổi
 
-4. ✅ Thêm biểu tượng con mắt cho agent login forms
+4. ⏳ Push code lên GitHub repository mới
 
-5. ✅ Thêm biểu tượng con mắt cho settings password forms
-
-6. ✅ Thêm biểu tượng con mắt cho forgot password forms
-
-7. 🔄 Test tất cả form password với biểu tượng con mắt
+5. ⏳ Xác nhận và báo cáo kết quả
 
 

@@ -1,146 +1,24 @@
 
 > my-v0-project@0.1.0 dev /workspace/Khuongcuoicung
-> next dev -H 0.0.0.0
+> next dev
 
   ▲ Next.js 14.2.16
   - Local:        http://localhost:12000
-  - Network:      http://0.0.0.0:12000
 
  ✓ Starting...
- ✓ Ready in 1717ms
+ ✓ Ready in 1755ms
  ○ Compiling / ...
- ✓ Compiled / in 4.1s (780 modules)
- HEAD / 200 in 4325ms
- GET / 200 in 60ms
- GET / 200 in 35ms
- ○ Compiling /admin-agent ...
- ✓ Compiled /admin-agent in 780ms (799 modules)
- ✓ Compiled /admin in 287ms (818 modules)
- GET / 200 in 121ms
- GET / 200 in 49ms
- GET / 200 in 30ms
- ✓ Compiled in 410ms (421 modules)
- ✓ Compiled in 278ms (421 modules)
- ✓ Compiled in 239ms (421 modules)
- ✓ Compiled in 294ms (421 modules)
- ✓ Compiled in 931ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 81ms
- ✓ Compiled in 582ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 70ms
- ✓ Compiled in 267ms (421 modules)
- ✓ Compiled in 513ms (832 modules)
- ✓ Compiled in 251ms (421 modules)
- ✓ Compiled in 408ms (832 modules)
- ✓ Compiled in 433ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 83ms
- ✓ Compiled in 322ms (832 modules)
- ✓ Compiled in 523ms (832 modules)
- ✓ Compiled in 372ms (832 modules)
- ✓ Compiled in 341ms (832 modules)
- ✓ Compiled in 402ms (832 modules)
- ✓ Compiled in 328ms (832 modules)
- ✓ Compiled in 297ms (832 modules)
- ✓ Compiled in 354ms (832 modules)
- GET / 200 in 70ms
- ✓ Compiled in 315ms (832 modules)
- ✓ Compiled in 330ms (832 modules)
- ✓ Compiled in 646ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 45ms
- ✓ Compiled in 409ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 40ms
- ✓ Compiled in 242ms (421 modules)
- ✓ Compiled in 287ms (421 modules)
- ✓ Compiled in 232ms (421 modules)
- ✓ Compiled in 340ms (421 modules)
- ✓ Compiled in 254ms (421 modules)
- ✓ Compiled in 236ms (421 modules)
- ✓ Compiled in 229ms (421 modules)
- ✓ Compiled in 251ms (421 modules)
- ✓ Compiled in 215ms (421 modules)
- ✓ Compiled in 382ms (421 modules)
- ✓ Compiled in 263ms (421 modules)
- ✓ Compiled in 500ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 87ms
- ✓ Compiled in 420ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 70ms
- ✓ Compiled in 240ms (421 modules)
- ✓ Compiled in 229ms (421 modules)
- ✓ Compiled in 335ms (421 modules)
- ✓ Compiled in 327ms (421 modules)
- ✓ Compiled in 243ms (421 modules)
- ✓ Compiled in 237ms (421 modules)
- ✓ Compiled in 297ms (421 modules)
- ✓ Compiled in 346ms (421 modules)
- ✓ Compiled in 299ms (421 modules)
- ✓ Compiled in 272ms (421 modules)
- ✓ Compiled in 349ms (421 modules)
- ✓ Compiled /_not-found in 398ms (821 modules)
- GET / 404 in 691ms
- ✓ Compiled in 621ms (421 modules)
- ✓ Compiled in 360ms (421 modules)
- ✓ Compiled in 336ms (421 modules)
- ✓ Compiled in 316ms (421 modules)
- ✓ Compiled in 302ms (421 modules)
- ✓ Compiled in 260ms (421 modules)
- ✓ Compiled in 265ms (421 modules)
- ✓ Compiled in 317ms (421 modules)
- ✓ Compiled in 265ms (421 modules)
- ✓ Compiled in 319ms (421 modules)
- ✓ Compiled in 323ms (421 modules)
- ✓ Compiled in 309ms (421 modules)
- ✓ Compiled in 1061ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 89ms
- ✓ Compiled in 627ms (832 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 87ms
- ✓ Compiled in 360ms (421 modules)
- ✓ Compiled /_not-found in 468ms (821 modules)
- GET / 404 in 754ms
- GET /_next/static/webpack/25023fe7178d507f.webpack.hot-update.json 404 in 355ms
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 38ms
- ✓ Compiled in 303ms (423 modules)
- GET /_next/static/webpack/09619a8194cfc145.webpack.hot-update.json 404 in 17ms
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 26ms
- ✓ Compiled in 312ms (423 modules)
- GET /_next/static/webpack/37fd8330bf30e17f.webpack.hot-update.json 404 in 14ms
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 24ms
- ✓ Compiled in 309ms (423 modules)
- GET /_next/static/webpack/7f453ac189d72b7e.webpack.hot-update.json 404 in 15ms
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 25ms
- ✓ Compiled in 929ms (835 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 51ms
- ✓ Compiled in 678ms (835 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 43ms
- ○ Compiling /_error ...
- ✓ Compiled /_error in 1659ms (1047 modules)
- GET / 404 in 2161ms
- GET /_next/static/webpack/a12b492418ad012e.webpack.hot-update.json 404 in 306ms
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 77ms
- GET / 404 in 32ms
- ✓ Compiled in 850ms (608 modules)
- ✓ Compiled in 951ms (1061 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 81ms
- ✓ Compiled in 1045ms (1061 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /admin 200 in 88ms
- GET / 404 in 42ms
- GET / 404 in 33ms
- GET / 404 in 30ms
- GET / 404 in 29ms
- ○ Compiling /_not-found ...
+ ✓ Compiled / in 3.9s (784 modules)
+ GET / 200 in 4104ms
+ GET / 200 in 56ms
+ GET / 200 in 33ms
+ ○ Compiling /register ...
+ ✓ Compiled /register in 695ms (778 modules)
+ GET / 200 in 120ms
+ GET / 200 in 40ms
+ GET / 200 in 33ms
+ ✓ Compiled in 457ms (396 modules)
+ ✓ Compiled in 260ms (396 modules)
+ ✓ Compiled in 255ms (396 modules)
+ GET / 200 in 28ms
+ ✓ Compiled in 329ms (396 modules)
