@@ -73,3 +73,18 @@ venv.bak/
 *.sqlite
 *.sqlite3
 
+# Browser screenshots
+.browser_screenshots/
+
+# Test files
+test-*.js
+test-*.html
+test-*.py
+
+# Temporary server files
+simple-proxy.js
+simple-server.js
+start-simple.sh
+
+# Summary files (temporary)
+GOOGLE_OAUTH_FIX_SUMMARY.md

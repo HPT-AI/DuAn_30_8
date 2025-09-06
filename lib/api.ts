@@ -91,6 +91,11 @@ class ApiClient {
     }
   }
 
+  // Get stored access token
+  getAccessToken(): string | null {
+    return this.accessToken;
+  }
+
   // Set access token and store in localStorage
   setAccessToken(token: string | null) {
     this.accessToken = token;

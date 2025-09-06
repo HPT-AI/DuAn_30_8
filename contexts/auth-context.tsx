@@ -45,11 +45,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const currentUser = await apiClient.getCurrentUser()
-        setUser(mapApiUserToUser(currentUser))
+        // Only check for current user if we have an access token
+        const accessToken = apiClient.getAccessToken()
+        if (accessToken) {
+          console.log('[AUTH-CONTEXT] Found access token, checking current user...')
+          const currentUser = await apiClient.getCurrentUser()
+          setUser(mapApiUserToUser(currentUser))
+          console.log('[AUTH-CONTEXT] Current user loaded successfully')
+        } else {
+          console.log('[AUTH-CONTEXT] No access token found, skipping user check')
+        }
       } catch (error) {
         // No valid session, user remains null
-        console.log('No valid session found')
+        console.log('[AUTH-CONTEXT] No valid session found:', error)
+        // Clear invalid tokens
+        apiClient.setAccessToken(null)
+        apiClient.setRefreshToken(null)
       } finally {
         setIsLoading(false)
       }

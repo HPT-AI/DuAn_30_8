@@ -137,7 +137,28 @@ window.google.accounts.id.renderButton(container, {
     async signInWithCredential(token: string): Promise<any> {
         console.log('[GOOGLE-AUTH-SERVICE] Processing token from OAuth callback...');
         console.log('[GOOGLE-AUTH-SERVICE] Token received:', !!token);
-        return { access_token: token, token_type: 'bearer' };
+        
+        // Send the Google ID token to our backend for verification and token exchange
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/v1/auth/google/token`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ token }),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json().catch(() => ({ detail: 'Authentication failed' }));
+            throw new Error(errorData.detail || 'Google authentication failed');
+        }
+
+        const tokens = await response.json();
+        console.log('[GOOGLE-AUTH-SERVICE] Backend tokens received:', {
+            hasAccessToken: !!tokens.access_token,
+            hasRefreshToken: !!tokens.refresh_token
+        });
+        
+        return tokens;
     }
 
     decodeJWT(token: string): GoogleUser | null {
@@ -198,10 +219,10 @@ export async function signInWithGoogle(): Promise<{
       console.log('[GOOGLE-AUTH] Received credential:', credential ? 'Yes' : 'No');
 
       console.log('[GOOGLE-AUTH] Sending credential to backend...');
-      const result = await googleAuthService.signInWithCredential(credential);
-      console.log('[GOOGLE-AUTH] Backend response:', result);
+      const tokens = await googleAuthService.signInWithCredential(credential);
+      console.log('[GOOGLE-AUTH] Backend response:', tokens);
 
-      return { success: true, token: result.access_token || result.token };
+      return { success: true, tokens };
   } 
   catch (error) {
       console.error('[GOOGLE-AUTH] Google sign-in failed:', error);
